@@ -11,7 +11,7 @@ import os
 def send_email_with_payslip(to_email, employee_name, pdf_path):
     msg = EmailMessage()
     msg['Subject'] = f"Payslip for {employee_name}"
-    msg['From'] = "shrithan.adipuram@gmail.com"
+    msg['From'] = "add_your_mail"
     msg['To'] = to_email
     msg.set_content(f"Dear {employee_name},\n\nPlease find attached your payslip.\n\nRegards,\nHR Team")
 
@@ -134,7 +134,7 @@ def generate_payslips(monthandyear):
             total_deduction=f"{pt+tds+arrears_withheld}"
         )
 
-        send_email_with_payslip(to_email="shrithan.adipuram@gmail.com", employee_name=emp_name, pdf_path=f"{monthandyear}_{emp_code}_{emp_name}.pdf")
+        send_email_with_payslip(to_email="add_your_mail", employee_name=emp_name, pdf_path=f"{monthandyear}_{emp_code}_{emp_name}.pdf")
 
 root = tk.Tk()
 root.title("Payslip Generator")
