@@ -1,1 +1,2 @@
-.
+Creates a payslip with the payroll.xlsx file. Run the payslipgeneration.py file to generate payslips. But change the to_mail field, since all payslips are sent to a particular mail.
+
